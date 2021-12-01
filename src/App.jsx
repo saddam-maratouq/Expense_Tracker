@@ -5,11 +5,12 @@ import Balnce from './component/Balnce'
 import Header from './component/Header'
 import IncomeExpenses from './component/IncomeExpenses'
 import TransactionList from './component/TransactionList'
+import GlobalProvider from './context/GlobalCxt'
 
 function App() {
  
   return (
-    <div >
+    <GlobalProvider >
    <Header/> 
    <div className ='container'>
     <Balnce/>  
@@ -17,7 +18,7 @@ function App() {
     <TransactionList/> 
     <AddTransaction/> 
    </div>
-    </div>
+    </GlobalProvider>
   )
 }
 
