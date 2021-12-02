@@ -8,7 +8,7 @@ const initialState =  {
     transction : [
       { id: 1, text: 'Flower', amount: -20 },
       { id: 2, text: 'Salary', amount: 300 },
-      { id: 3, text: 'Book', amount: -50 },
+      { id: 3, text: 'Book', amount: -10 },
       { id: 4, text: 'Camera', amount: 150 }
     ]
 }
@@ -33,12 +33,19 @@ function GlobalProvider({children}) {
             type : 'DELET_TRANS' ,
             paylod : id  
         })
+    }
+ 
+
+    const addTransaction = (transction) => {
+        dispatch ({
+            type : 'ADD_TRANS' ,
+            paylod : transction 
+        })
 
         
     }
 
-
-    const value = { transction : state.transction , deletTransaction } 
+    const value = { transction : state.transction , deletTransaction , addTransaction } 
 
     return ( 
      <globalContext.Provider  value={value }>

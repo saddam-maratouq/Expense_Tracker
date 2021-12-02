@@ -24,7 +24,7 @@ const IncomeExpenses = () => {
   .filter(item => item < 0 )  //[-20,-10]
   .reduce(reducer,0).toFixed(2) ) * -1 
 
- console.log(expense);  
+//  console.log(expense);  
 
 
 

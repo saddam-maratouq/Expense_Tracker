@@ -36,7 +36,7 @@ console.log(sum)
 
 ---
 
-//Exampel toFixed methode in js  we use to fixed to take specfic number of  decimal place in this ex : (Balance component line 9 )
+// Exampel toFixed methode in js  we use to fixed to take specfic number of  decimal place in this ex : (Balance component line 9 )
 
 let apple = 22.9123 
 
@@ -48,6 +48,8 @@ console.log(number)
 // =>  22.91 
 
 if (3) =>  22.912 
+
+--- 
 
 
 
@@ -63,3 +65,13 @@ if (3) =>  22.912
  console.log(expense);   
 
 
+// 
+
+
+when u add a new obj in amount back value is obj and thats give err when map so there is a lot of way to fix issue 
+
+Number(amount)  // +amount 
+
+
+
+/// 
