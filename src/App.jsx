@@ -10,16 +10,19 @@ import GlobalProvider from './context/GlobalCxt'
 function App() {
  
   return (
+
     <GlobalProvider >
    <Header/> 
-   <div className ='container'>
+   <div className ='container'> 
     <Balnce/>  
     <IncomeExpenses/> 
     <TransactionList/> 
     <AddTransaction/> 
    </div>
     </GlobalProvider>
-  )
+ 
+ )
+
 }
 
 export default App

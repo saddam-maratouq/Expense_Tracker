@@ -6,7 +6,7 @@ const TransactionList = () => {
 
   const {transction } = useContext(globalContext)
 
-console.log(transction);
+// console.log(transction);
 
 
   return (

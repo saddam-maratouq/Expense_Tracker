@@ -27,7 +27,7 @@ function GlobalProvider({children}) {
     const [state,dispatch] = useReducer(AppReducer,initialState)  
 
 
-    const value = { transction : state.transction }
+    const value = { transction : state.transction } 
 
     return ( 
      <globalContext.Provider  value={value }>
