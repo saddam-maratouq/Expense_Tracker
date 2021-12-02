@@ -17,7 +17,7 @@ const numbers = [175, 69, 25];
 
 const reducer = (acc, item) => acc + item  ;
 
-  const sum = numbers.reduce(reducer ) //  , 20  
+  const sum = numbers.reduce(reducer ) //  , 20  , 0 is important cuz protect from err which Array is empty value ...
 
   // 20 is deafult acc value and you can say  + to the total of this array  
 
@@ -63,4 +63,3 @@ if (3) =>  22.912
  console.log(expense);   
 
 
- 

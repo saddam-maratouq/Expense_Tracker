@@ -1,9 +1,17 @@
-import React from 'react' 
+import React, { useContext } from 'react' 
+
+import {globalContext}  from '../context/GlobalCxt'
 
 
 
 
-const Transaction = ({trans}) => { 
+const Transaction = ({trans}) => {  
+
+  const { deletTransaction} = useContext(globalContext) 
+  
+
+
+
 
     const Sign = trans.amount < 0  ? '-' : '+' 
 
@@ -15,7 +23,7 @@ const Transaction = ({trans}) => {
 
           {trans.text} <span> {Sign} $ {Math.abs(trans.amount )}  </span> 
 
-          <button className="delete-btn">x</button>
+          <button onClick={() => deletTransaction(trans.id)} className="delete-btn">x</button>
         </li>
     )
 }

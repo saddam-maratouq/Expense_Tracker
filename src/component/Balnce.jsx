@@ -10,15 +10,15 @@ const Balnce = () => {
 
   const amount = transction.map(trans=> trans.amount) //[-20,300,-10,150]
 
-  const reducer = (acc,item) => acc + item  
+  const reducer = (acc,item) => acc + item 
 
-  const total = amount.reduce(reducer,200).toFixed(2) 
+  const total = amount.reduce(reducer , 0 ).toFixed(2) 
 
   // console.log(total);
 
 
 
-  return ( 
+  return (  
 
     <>
       <h4>Your Balance</h4>  

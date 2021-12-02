@@ -10,11 +10,11 @@ const IncomeExpenses = () => {
 
 
 
-  const reducer = (acc,item) => acc + item
+  const reducer = (acc,item) =>  acc + item   
 
   const income =  amount
   .filter(item => item > 0 )  //[300,150]
-  .reduce(reducer).toFixed(2) 
+  .reduce(reducer,0).toFixed(2) 
     
     // console.log(income);
     
@@ -22,7 +22,7 @@ const IncomeExpenses = () => {
 
     const expense =  (amount
   .filter(item => item < 0 )  //[-20,-10]
-  .reduce(reducer).toFixed(2) ) * -1 
+  .reduce(reducer,0).toFixed(2) ) * -1 
 
  console.log(expense);  
 
