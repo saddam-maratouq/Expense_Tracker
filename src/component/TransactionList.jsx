@@ -1,6 +1,8 @@
 import React, { useContext } from "react"; 
 import { globalContext} from '../context/GlobalCxt'
-import Transaction from "./Transaction";
+import Transaction from "./Transaction"; 
+
+
 
 const TransactionList = () => { 
 
