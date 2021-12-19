@@ -26,7 +26,7 @@ function GlobalProvider({children}) {
 
     const [state,dispatch] = useReducer(AppReducer,initialState, () => {
         const localData = localStorage.getItem('trans');
-        return localData ? JSON.parse(localData) : [];
+        return localData ? JSON.parse(localData) : [] ;
     } )  
 
 
