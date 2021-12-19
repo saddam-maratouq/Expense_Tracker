@@ -6,7 +6,10 @@ import {AppReducer} from './AddReducer'
 const initialState =  {
 
     transction : [
-      
+      { id: 1, text: 'Flower', amount: -20 },
+      { id: 2, text: 'Salary', amount: 300 },
+      { id: 3, text: 'Book', amount: -10 },
+      { id: 4, text: 'Camera', amount: 150 }
     ]
 }
     
@@ -22,9 +25,11 @@ const initialState =  {
 function GlobalProvider({children}) { 
 
     const [state,dispatch] = useReducer(AppReducer,initialState, () => {
-        const localData = localStorage.getItem('trans');
-        return localData ? JSON.parse(localData) : [] ;
-    } )  
+        const item = localStorage.getItem('trans');
+         return item ? JSON.parse(item) : initialState 
+      
+ })  
+
 
 
     
